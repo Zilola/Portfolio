@@ -1,17 +1,14 @@
 {
-  "name": "portfolio",
+  "name": "modern_portfolio",
   "version": "1.0.0",
   "description": "Responsive portfolio website",
-  "main": "server.js",
-  "dependencies": {
-    "express": "^4.17.1",
-    "node-sass": "^4.13.0"
-  },
-  "devDependencies": {},
+  "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "start": "node server.js"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
   "author": "Zilola Matasimova",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
 }
