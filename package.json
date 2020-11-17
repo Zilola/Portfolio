@@ -9,6 +9,6 @@
   "author": "Zilola Matasimova",
   "license": "MIT",
   "dependencies": {
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.14.1"
   }
 }

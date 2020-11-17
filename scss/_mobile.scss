@@ -1,7 +1,9 @@
 
 //Widescreen
 @include mediaXl {
-
+// .projects{
+//     grid-template-columns: repeat(4, 1fr);
+// }
 }
 
 // Desktops & laptops
@@ -48,6 +50,16 @@
         width:150px;
         height:150px;
     }
+    .about-info{
+        grid-template-areas:
+        'bioimage'
+        'bio'
+        'job1'
+        'job2'
+        'job3';
+
+        grid-template-areas: 1fr;
+    }
 }
 
 // Smartphones
@@ -55,5 +67,7 @@
     main#home h1{
         margin-top: 10 vh;
     }
-
+    .projects{
+        grid-template-columns: 1fr;
+    }
 }

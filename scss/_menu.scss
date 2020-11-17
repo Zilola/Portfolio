@@ -33,15 +33,18 @@
     .btn{
       //Line 1 - Rotate
         &:nth-child(1){
+          //first line reposition himself \
          transform: rotate(45deg) translate(5px, 5px);
           
       }
        //Line 2 - Hide
        &:nth-child(2){
+         //second line goes away or hiding (no line)
         opacity: 0;
        }
-      // //Line 3 - Rotate
+      //Line 3 - Rotate
        &:nth-child(3){
+         // this time it is the negative (-45deg) / a lttle mess not easy to get "X" (7px, -6px) 
         transform: rotate(-45deg) translate(7px, -6px);
        } 
     }
@@ -50,19 +53,21 @@
 }
 
    //Menu Overlay
+   //do not show menu 
    .menu{
      position: fixed;
      top: 0;
      width:100%;
      opacity:0.9;
      visibility: hidden;
-
+   // after clicking show menu
     &.show{
       visibility: visible;
 
     }
-
-    &-branding, &-nav{
+   // & adds menu-branding, menu-nav
+    &-branding, &-nav
+    {
       display: flex;
       flex-flow: column wrap;
       align-items: center;
@@ -78,7 +83,11 @@
       padding: 0;
       background: darken($primary-color,5);
       // background: darken(rgb(146, 158, 37), $amount: 10);
+
+      //do not show the list
       list-style: none;
+
+      //to slide in from the top 
       transform: translate3d(0, -100%,0);
        @include easeOut;
 
@@ -89,7 +98,7 @@
 
       }
       
-      //Branding Side
+      //to slide in from bottom
       &-branding {
         background: $primary-color;
         @include easeOut;
@@ -140,9 +149,9 @@
      }
      //for(let x=0; i<4; i++)
      // Delay each nav item slide by 0.1s
+    }
      @for $x from 1 through 4{
-     .nav-item:neth-child(#{$x}) {
-       transition-delay: $x * 0.1s;
-       }
-     } 
-   }
+       .nav-item:nth-child(#{$x}) {
+         transition-delay: $x * 0.1s;
+         }
+       } 
