@@ -9,7 +9,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #FFF;
+    background: #fff;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
@@ -40,14 +40,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #2a4557;
+    background: #373737;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #325368;
+    background: #444;
     transition: all 0.5s ease-out;
     transform: translate3d(0, 100%, 0); }
     .menu-branding.show {
@@ -57,14 +57,14 @@
       height: 250px;
       background: url("/dist/img/picture.png");
       border-radius: 50%;
-      border: solid 3px #1aee2c; }
+      border: solid 3px #fff; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #1aee2c; }
+      color: #fff; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -72,11 +72,11 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: #FFF;
+    color: #fff;
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #1aee2c;
+      color: #fff;
       transition: all 0.5s ease-out; }
 
 .nav-item:nth-child(1) {
@@ -98,21 +98,21 @@ body {
   background-image: url("/dist/img/portfolio2.jpg");
   background-attachment: fixed;
   background-size: cover;
-  background-image: #325368;
-  color: #FFF;
+  background-image: #444;
+  color: #fff;
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body:after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     right: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: rgba(50, 83, 104, 0.5); }
+    background: rgba(68, 68, 68, 0.5); }
 
 h1,
 h2,
@@ -128,7 +128,7 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(53, 88, 111, 0.5); }
+    background: rgba(73, 73, 73, 0.5); }
 
 a {
   color: #d1eedf;
@@ -140,7 +140,7 @@ header {
   width: 100%; }
 
 .text--secondary {
-  color: #1aee2c; }
+  color: #fff; }
 
 main {
   padding: 4rem;
@@ -150,7 +150,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #1aee2c;
+        color: #fff;
         transition: all 0.5s ease-out; }
   mainhome {
     overflow: hidden; }
@@ -166,13 +166,13 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: #1aee2c 3px solid;
+    border: #fff 3px solid;
     width: 250px;
     height: 250px; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem;
-    color: #1aee2c; }
+    color: #fff; }
   .about-info .job-1 {
     grid-area: job1;
     list-style: none; }
@@ -183,9 +183,9 @@ main {
     grid-area: job3;
     list-style: none; }
   .about-info .job {
-    background: #3a6179;
+    background: #515151;
     padding: 0.5rem;
-    border-bottom: #1aee2c 5px solid; }
+    border-bottom: #fff 5px solid; }
 
 .projects {
   display: grid;
@@ -196,7 +196,7 @@ main {
     border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #1aee2c;
+      border-color: #fff;
       transition: all 0.5s ease-out; }
 
 .boxes {
@@ -213,7 +213,7 @@ main {
     transition: all 0.5s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
-      background: #1aee2c;
+      background: #fff;
       color: #000; }
       .boxes div:hover span {
         color: #000; }
@@ -223,10 +223,10 @@ main {
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
-  background: #111c23;
+  background: #111111;
   color: #333; }
   .btn-dark:hover {
-    background: #1aee2c;
+    background: #fff;
     color: #000; }
 
 .btn-light {
@@ -237,13 +237,13 @@ main {
   color: #000;
   background: white; }
   .btn-light:hover {
-    background: #1aee2c; }
+    background: #fff; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #213846;
-  color: #FFF;
+  background: #2b2b2b;
+  color: #fff;
   height: 60px; }
 
 @media screen and (max-width: 768px) {
