@@ -6,7 +6,7 @@
   "homepage": "https://Zilola.github.io/Portfolio/index.html",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "deploy": "main -d dist"
+    "deploy": "gh-pages -d PORTFOLIO"
   },
   "author": "Zilola Matasimova",
   "license": "MIT",
